@@ -2,9 +2,57 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>My GitHub Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字デザイン</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-size: 64px;
+            font-family: 'serif', 'Hiragino Mincho Pro', 'MS PMincho', 'Times New Roman', serif; /* 明朝体 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .line {
+            border-top: 1px solid black; /* 細い線 */
+            width: 100%; /* 線の幅 */
+            margin: 10px 0;
+        }
+
+        .container {
+            width: 80%;
+            text-align: left;
+        }
+
+        .kei {
+            text-align: left;
+        }
+
+        .kei-i {
+            text-indent: 2em; /* 2文字分インデント */
+        }
+
+        .kei-i .line {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .kei-right {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <h1>GitHub Pagesサイトへようこそそ！！！</h1>
+    <div class="container">
+        <div class="kei">経緯<span class="line"></span></div>
+        <div class="kei-i">敬意<span class="line"></span></div>
+        <div class="kei-right">慶伊</div>
+    </div>
 </body>
 </html>
