@@ -8,39 +8,34 @@
         body {
             background-color: white;
             color: black;
-            font-size: 64px;
-            font-family: 'serif', 'Hiragino Mincho Pro', 'MS PMincho', 'Times New Roman', serif; /* 明朝体 */
-            margin: 0;
-            padding: 0;
+            font-family: 'serif', 'Hiragino Mincho Pro', 'MS PMincho', 'Times New Roman', serif;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-        }
-
-        .line {
-            border-top: 1px solid black; /* 細い線 */
-            width: 100%; /* 線の幅 */
-            margin: 10px 0;
+            margin: 0;
         }
 
         .container {
-            width: 80%;
             text-align: left;
+            font-size: 80px;
+            line-height: 1.2;
         }
 
-        .kei {
-            text-align: left;
+        .text-line {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .text-line .line {
+            flex-grow: 1;
+            border-top: 2px solid black;
+            margin-left: 10px;
         }
 
         .kei-i {
-            text-indent: 2em; /* 2文字分インデント */
-        }
-
-        .kei-i .line {
-            width: 100%;
-            margin: 10px 0;
+            text-indent: 1em;
         }
 
         .kei-right {
@@ -50,9 +45,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="kei">経緯<span class="line"></span></div>
-        <div class="kei-i">敬意<span class="line"></span></div>
-        <div class="kei-right">慶伊</div>
+        <div class="text-line">
+            <span>経緯</span>
+            <span class="line"></span>
+        </div>
+        <div class="text-line kei-i">
+            <span>敬意</span>
+            <span class="line"></span>
+        </div>
+        <div class="text-line kei-right">
+            <span>慶伊</span>
+        </div>
     </div>
 </body>
 </html>
